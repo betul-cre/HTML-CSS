@@ -1,0 +1,106 @@
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: bisque
+}
+
+.bike{
+  left: 50;
+  width: 400px;
+  position: absolute;
+  bottom: 70px;
+  transform: translateX(+100%);
+}
+.bike img{
+  animation: bike 1s linear infinite;
+}
+
+@keyframes bike {
+  100%{
+    transform: translateY(-1px);
+  }
+  50%{
+    transform: translateY(-2px);
+  }
+  0%{
+    transform: translateY(-1spx);
+  }
+}
+.wheel{
+  left: 50;
+  bottom: 178px;
+  transform: translateX(+100%);
+  position: absolute;
+}
+
+
+.wheel img{
+  animation: wheel 1s linear infinite;
+}
+@keyframes wheel {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.front{
+  left: +375px;
+  bottom: -140px;
+  position: absolute;
+}
+
+.back{
+  left: +690px;
+  bottom: -140px;
+  position: absolute;
+  
+}
+
+.balons{
+  left: +70px;
+  bottom: 188px;
+  transition: all 10s;
+  
+}
+
+.one{
+  left: +1200px;
+  bottom: -200px;
+  position: absolute;
+}
+.two{
+  left: +600px;
+  bottom: +80px;
+  position: absolute;
+}
+.three{
+  left: +70px;
+  bottom: +200px;
+  position: absolute;
+}
+
+.balons img{
+  animation: balon 10s linear infinite;
+}
+@keyframes balon {
+  10%, 100%, 50% {
+    bottom: 30;
+  }
+  50% {
+    bottom: 700px;
+  }
+  100%{
+    top: 20;
+  }
+ 
+}
+  
+  
+
+  
+
+
+
+
